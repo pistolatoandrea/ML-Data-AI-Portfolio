@@ -2,7 +2,7 @@
 
 This project analyzes the classic Titanic passenger dataset to build a machine learning model that predicts whether a given passenger survived the 1912 disaster.
 
-**See the full analysis in the notebook:** [Titanic-ML-Project.ipynb]
+**See the full analysis in the notebook:** [Titanic_ML_Project.ipynb]
 
 ## Project Overview
 
