@@ -8,7 +8,7 @@ All detailed analysis, exploratory data analysis (EDA), and model comparison are
 
 The notebook covers the following key steps:
 
-1.  **Exploratory Data Analysis (EDA):** Using `Seaborn` and `Matplotlib` to visualize the data and uncover key patterns. We identified `Sex`, `Pclass` (Ticket Class), and `Fare` as strong predictors of survival.
+1.  **Exploratory Data Analysis (EDA):** Using `Seaborn` and `Matplotlib` to visualize the data and uncover key patterns. `Sex`, `Pclass` (Ticket Class), and `Fare` are identified as strong predictors of survival.
 2.  **Data Cleaning & Preparation:** Loading the dataset and handling missing values (like `Age` and `Embarked`) and transforming non-numeric features (like `Sex`) into machine-readable formats.
 3.  **Model Training & Comparison:** Training four different classification models (`Random Forest`, `Decision Tree`, `Logistic Regression`, and `KNN`) to establish a performance benchmark.
 4.  **Model Evaluation & Analysis:** Comparing the models based on their accuracy scores, and then diving deeper into the best-performing model (Random Forest) by analyzing its **Confusion Matrix** and **Feature Importance**.
@@ -17,7 +17,7 @@ The notebook covers the following key steps:
 
 * **Full Analysis Jupyter Notebook:** `Titanic_ML_Project.ipynb'
 * **Interactive App Code:** `app_titanic.py`
-* **App Libraries** 'reuirements.txt'
+* **App Libraries** 'requirements.txt'
 * **Model:** 'titanic_model.pkl'
   
 ### Tech Stack
