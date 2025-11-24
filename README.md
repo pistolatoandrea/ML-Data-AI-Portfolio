@@ -1,10 +1,10 @@
-# 💡 My 10-Project Machine Learning Journey
+# MLOps and Modern AI Engineering Portfolio
 
-This repository documents my comprehensive learning path through 10 end-to-end Machine Learning, Data Engineering (MLOps), and Modern AI projects. The goal is to build a robust portfolio demonstrating practical skills across diverse methodologies and deployment scenarios.
+This repository documents my comprehensive learning path through 10 end-to-end Machine Learning, DevOps (MLOps), and Modern AI projects. The goal is to build a robust portfolio demonstrating practical skills across diverse methodologies and deployment scenarios.
 
 ## 🗺️ Project Roadmap and Status
 
-The projects are organized into three core categories: **Foundations (A)**, **Engineering (B)**, and **Modern AI (C)**.
+The projects are organized into three core categories: **ML Foundations (A)**, **MLOps (B)**, and **Modern AI (C)**.
 
 | ID | Project Name | Category | Status | Key Skills | Folder Link |
 | :---: | :--- | :--- | :---: | :--- | :--- |
