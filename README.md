@@ -10,7 +10,7 @@ The projects are organized into three core categories: **ML Foundations (A)**, *
 | :---: | :--- | :--- | :---: | :--- | :--- |
 | **A1** | Titanic Survival Prediction | Classification | ✅ **COMPLETED** | EDA, Binary Classification, Sklearn Pipeline | [A1\_Titanic\_Classification](./A1_Titanic_Classification) |
 | **A2** | Ames House Price Prediction | Regression | ✅ **COMPLETED** | Regression, Feature Engineering, Log Transformation, Lasso Tuning | [A2\_House\_Prices\_Regression](./A2_House_Prices_Regression) |
-| **A3** | Customer Segmentation | Clustering | ⬜ PENDING | K-Means, PCA, Unsupervised Learning | ⬜ |
+| **A3** | Customer Segmentation | Clustering | ✅ **COMPLETED**  | K-Means, PCA, Unsupervised Learning | [A3\_Customer\_Segmentation](./A3_Customer_Segmentation) |
 | **A4** | News Article Classification | NLP Multi-Class | ⬜ PENDING | Text Preprocessing, TF-IDF, Multi-Class Classification | ⬜ |
 | **B1** | Prediction API with Docker | MLOps Base | ⬜ PENDING | FastAPI, Dockerization, Endpoint Deployment | ⬜ |
 | **B2** | Automated ETL Pipeline | Data Engineering | ⬜ PENDING | Apache Airflow/Prefect, Data Transformation, Scheduling | ⬜ |
