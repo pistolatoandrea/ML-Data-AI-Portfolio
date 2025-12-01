@@ -28,7 +28,7 @@ def load_resources():
         model = pickle.load(file)
     
     # Load the Vectorizer
-    
+
     with open(vectorizer_path, 'rb') as file:
         vectorizer = pickle.load(file)
         
@@ -61,24 +61,6 @@ This app uses a **Naive Bayes** Machine Learning model to classify news articles
 * 🗳️ **Politics**
 * ⚽ **Sport**
 * 💻 **Tech**
-""")
-st.markdown("""
-# ¡Hola, Irene! 👋
-
-Lo que estás viendo es un **clasificador de textos en inglés** basado en un modelo de Machine Learning.
-
-> **Nota importante:** Este sistema funciona de manera autónoma y **no está conectado a ninguna Inteligencia Artificial**.
-
-**¿Cómo probarlo?**
-Simplemente inserta un pequeño artículo en **inglés** en el cuadro de texto y presiona el botón **"Classify article"**.
-
-El modelo analizará el contenido y arrojará su predicción, indicando con un porcentaje (XX%) si el artículo trata sobre:
-
-* 🏢 Business
-* 🎬 Entertainment
-* 🗳️ Politics
-* ⚽ Sport
-* 💻 Tech
 """)
 
 # Input Area
