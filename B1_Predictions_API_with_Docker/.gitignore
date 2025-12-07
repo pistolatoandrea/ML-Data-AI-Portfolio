@@ -1,0 +1,27 @@
+# --- Python Basics ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.env
+
+# --- Mac OS Junk ---
+.DS_Store
+
+# --- IDE Settings ---
+.vscode/
+.idea/
+
+# --- Notebook Checkpoints ---
+.ipynb_checkpoints/
+
+# --- MLOps Specifics ---
+# We ignore the historical versions to save space (Git isn't for massive storage)
+# But we KEEP the production model (app/model/news_classifier.pkl) for the demo.
+app/model/versions/
+
+# Ignore heavy datasets (users should download them separately or use DVC)
+notebooks/bbc-text.csv
