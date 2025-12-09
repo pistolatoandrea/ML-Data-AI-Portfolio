@@ -8,7 +8,7 @@ from pydantic import BaseModel
 app = FastAPI(
     title="News Classifier API",
     version="1.0",
-    description="A simple API to classify news articles using a pre-trained ML model."
+    description="A simple API by Andrea Pistolato to classify news articles using a pre-trained ML model."
 )
 
 # 2. Define the Input Schema using Pydantic
