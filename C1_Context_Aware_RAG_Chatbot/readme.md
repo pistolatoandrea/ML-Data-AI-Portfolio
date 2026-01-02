@@ -84,6 +84,7 @@ Before chatting, we must transform the PDF into mathematical vectors.
 
 ```bash
 python ingest.py
+
 Expected Output: ✅ Done! Database saved in folder 'db_chroma'.
 ```
 
@@ -106,9 +107,13 @@ The browser will automatically open at http://localhost:8501.
 
     **Overlap**: 200 characters (to maintain context between cuts and avoid losing information mid-sentence).
 
-2. Semantic Search (vs Keyword Search) Unlike SQL (WHERE text LIKE '%holiday%'), we use Embeddings. If the user asks "Can I work from home?", the system finds the paragraph "Smart Working Policy" thanks to vector proximity, even if the exact words differ.
+2. **Semantic Search (vs Keyword Search)**
 
-3. Retrieval Parameters (K=3) The system retrieves the 3 most relevant chunks for each question. This balances answer completeness with token costs and reduces the risk of the "Lost in the Middle phenomenon".
+    Unlike SQL (WHERE text LIKE '%holiday%'), we use Embeddings. If the user asks "Can I work from home?", the system finds the paragraph "Smart Working Policy" thanks to vector proximity, even if the exact words differ.
+
+3. **Retrieval Parameters (K=3)**
+
+    The system retrieves the 3 most relevant chunks for each question. This balances answer completeness with token costs and reduces the risk of the "Lost in the Middle phenomenon".
 
 ### 🔮 Future Improvements
 
