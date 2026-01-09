@@ -2,7 +2,9 @@
 
 This project analyzes the classic Titanic passenger dataset to build a machine learning model that predicts whether a given passenger survived the 1912 disaster.
 
-**See the full analysis in the notebook:** [Titanic_ML_Project.ipynb]
+**See the full analysis in the notebook:** 
+
+[Titanic_ML_Project.ipynb](./Titanic_ML_Project.ipynb)
 
 ## Project Overview
 
@@ -23,7 +25,7 @@ This notebook covers the following key steps:
 
 In this section, the goal is to explore the dataset, without considering missing values, visually to understand its structure, find patterns, and identify which features (columns) might be good predictors for survival. This is done by plotting the relationships between different variables and the `survived` target column.
 
-### Analytical Approach
+### Analytical Approach
 
 * First, **categorical features** (like `Sex` or `Pclass`) are analyzed using **bar charts** (`sns.countplot`). These plots are ideal for comparing survival counts (survived vs. not survived) across different discrete groups.
 * Second, **continuous features** (like `Age` or `Fare`) are examined using **density plots** (`sns.kdeplot`). These plots help visualize the distribution of values and compare the shape of the data for survivors versus non-survivors.
@@ -112,3 +114,12 @@ While 81% is a strong result, to overcome this performance plateau, the next log
 2.  **Advanced Feature Extraction:**
     * **`Name`**: Extracting titles (e.g., "Mr.", "Mrs.", "Dr.", "Master") could create a new, powerful categorical feature that likely correlates with both age and social status.
     * **`Ticket`**: Analyzing ticket prefixes might reveal correlations to cabin location or booking group, which could also influence survival.
+
+# Streamlit App
+
+To view and interact with the application locally, you can use the provided script named **`app_titanic.py`**. After activating your virtual environment and installing the necessary dependencies, simply execute the command in your terminal:
+
+ ```bash
+ streamlit run app_titanic.py
+ ```
+This will launch a local web server and automatically open the app in your default browser. Please note that depending on your configuration, you might be prompted to create a Streamlit account or provide an email address to finalize the setup.

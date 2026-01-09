@@ -10,7 +10,7 @@ full_url = BASE_URL + ENDPOINT
 # 2. Payload
 # Modify it as you wish
 news_to_classify = {
-    "text": "Rockets Soar with Last-Second Stunner. In a stunning buzzer-beater finish, the Houston Rockets edged out the Chicago Bulls 98-96 last night. Trailing by ten in the fourth quarter, rookie Jalen Green sank a fading three-pointer as time expired, sending the home crowd into a frenzy. This victory marks their fifth consecutive win this season"
+    "text": "Innovation drives modern success. Companies must adapt to rapidly changing markets to survive. Leaders who embrace technology and foster creativity will secure long-term growth and outperform competitors in the global economy."
 }
 
 print(f"📡 Calling API: {full_url}...")

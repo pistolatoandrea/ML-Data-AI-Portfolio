@@ -48,7 +48,6 @@ Before integrating the AI, I established the baseline infrastructure using **Fas
 * **New Flow:** `Input` -> `Pipeline(Vectorization + Model)` -> `Prediction`
 
 ## 🧠 5. Refactoring & Manual Continuous Deployment (CD)
-I created a specialized notebook (`notebooks/refactor_pipeline.ipynb`) to generate the model artifact.
 
 To handle updates (e.g., dataset changes) without breaking production, I implemented a **Dual-Save Strategy**:
 1.  **Historical Archive:** Saves a timestamped copy in `app/model/versions/` (e.g., `model_20231027.pkl`).
@@ -98,12 +97,7 @@ The service was deployed to **Render** directly from the GitHub repository.
 ## 📡 9. Client Testing
 To simulate a real-world scenario (e.g., a frontend app calling the model), I wrote a Python script (`prediction_call.py`) using the `requests` library.
 
-**Usage:**
-```bash
-python prediction_call.py
-```
-
-**Output:**
+**Expected Output:**
 ```plaintext
 📡 Calling API...
 ✅ Success!

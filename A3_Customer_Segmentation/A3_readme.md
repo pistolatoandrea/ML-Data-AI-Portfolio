@@ -10,6 +10,10 @@ This project focuses on **Unsupervised Machine Learning** to identify distinct c
 
 The analysis moves from basic exploratory analysis to advanced **K-Means Clustering**, validated by **Silhouette Scores**, and visualized using **PCA (Principal Component Analysis)** and **Interactive 3D Plots**.
 
+**See the full analysis in the notebook:** 
+
+[Customer_Segmentation.ipynb](./Customer_Segmentation.ipynb)
+
 ---
 
 ## 🎯 Business Objective
@@ -68,7 +72,9 @@ We used two mathematical methods to validate that **K=5** is the optimal number 
 ### 4. PCA Customer Segmentation (Dimensionality Reduction)
 
 Since we included **Age** in the final model (3 variables), we used PCA to project the data into 2D space.
-![PCA Clusters](./Customer_Segmentation_Images/PCA_Clusters.png)
+
+![PCA Clusters](./Customer_Segmentation_Images/PCA_Scatterplot.png)
+
 *Data projected onto Principal Components. Note how the "Age" factor changes the cluster shapes compared to the simple 2D plot.*
 
 ---
@@ -76,7 +82,9 @@ Since we included **Age** in the final model (3 variables), we used PCA to proje
 ### 5. Loadings Analysis (Interpretation)
 
 To understand what the PCA axes actually mean, we analyzed the feature loadings.
-![Feature Loadings](./Customer_Segmentation_Images/Feature_Loadings.png)
+
+![Feature Loadings](./Customer_Segmentation_Images/PCA_Loading_Analysis.png)
+
 * **PC1 (X-Axis):** Represents "Generational Conservatism" (Older people spend less, Younger people spend more).
 * **PC2 (Y-Axis):** Represents pure "Wealth" (Annual Income).
 

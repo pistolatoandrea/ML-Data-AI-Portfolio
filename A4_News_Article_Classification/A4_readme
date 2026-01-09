@@ -1,0 +1,94 @@
+# Project A4: News Article Classification 📰
+
+![Python](https://img.shields.io/badge/Python-3.x-blue.svg)
+![NLP](https://img.shields.io/badge/Domain-NLP-green.svg)
+![Sklearn](https://img.shields.io/badge/Library-Scikit--Learn-orange.svg)
+![Status](https://img.shields.io/badge/Status-Completed-success.svg)
+
+## 📌 Project Overview
+This project focuses on **Natural Language Processing (NLP)** using supervised machine learning techniques. The goal is to classify news articles into one of five distinct categories: **Sport, Business, Politics, Tech, and Entertainment**.
+
+The project covers the full NLP pipeline, from text cleaning and tokenization to feature extraction using TF-IDF and model deployment preparation.
+
+**See the full analysis in the notebook:** 
+
+[News_Article_Classification.ipynb](./News_Article_Classification.ipynb)
+
+
+## 📂 Dataset
+The project uses the **BBC News Dataset**, consisting of **2,225 news articles** from the BBC news website (2004-2005).
+
+* **Format:** CSV (`bbc-text.csv`)
+* **Columns:** `text` (Content), `category` (Target Label)
+* **Categories:**
+    * ⚽ Sport
+    * 🏢 Business
+    * 🗳️ Politics
+    * 💻 Tech
+    * 🎬 Entertainment
+* **Balance:** The dataset is well-balanced across all classes.
+
+## ⚙️ Methodology & Tech Stack
+
+### 1. Text Preprocessing Pipeline
+To transform raw text into a machine-readable format, the following steps were implemented:
+* **Cleaning:** Removal of non-alphabetic characters using **Regex**.
+* **Lowercasing:** Converting text to lowercase.
+* **Stopwords Removal:** Removing common English words (using `sklearn.feature_extraction.text.ENGLISH_STOP_WORDS`).
+* **Stemming:** Reducing words to their root form using NLTK's **PorterStemmer**.
+
+### 2. Feature Extraction
+* **TF-IDF (Term Frequency-Inverse Document Frequency):** Used to convert text data into numerical vectors, limiting the vocabulary to the top **5,000** most frequent features to reduce dimensionality and noise.
+
+### 3. Model Training & Comparison
+Two major algorithms were trained and compared:
+1.  **Multinomial Naive Bayes (MNB):** A probabilistic classifier suitable for discrete features (like word counts).
+2.  **Logistic Regression:** A discriminative linear model.
+
+## 📊 Results and Performance
+
+Both models performed exceptionally well, but Naive Bayes was selected for production due to slightly higher accuracy and training speed.
+
+| Model | Accuracy | Precision | Recall | F1-Score |
+| :--- | :---: | :---: | :---: | :---: |
+| **Naive Bayes (Selected)** | **98.20%** | **0.98** | **0.98** | **0.98** |
+| Logistic Regression | 97.98% | 0.98 | 0.98 | 0.98 |
+
+**Confusion Matrix Insight:**
+The model shows minimal misclassification. Slight confusion exists between *Business* and *Politics* probably due to shared vocabulary (e.g., "government", "budget", "tax"), but the error rate is negligible (<2%).
+
+## 📦 Artifacts & Serialization
+The final model and the vectorizer were serialized using **Pickle** for deployment in external applications (See Project A5):
+* `news_classifier_model.pkl`: The trained Naive Bayes model.
+* `tfidf_vectorizer.pkl`: The fitted TF-IDF object (essential for preprocessing new data).
+
+## 🚀 How to Run
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/YOUR_USERNAME/ML-Data-AI-Portfolio.git](https://github.com/YOUR_USERNAME/ML-Data-AI-Portfolio.git)
+    cd A4_News_Article_Classification
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    pip install pandas numpy matplotlib seaborn scikit-learn nltk
+    ```
+
+3.  **Run the Notebook:**
+    Open `News_Article_Classification.ipynb` in VS Code or Jupyter Notebook to reproduce the training and evaluation steps.
+
+## 🔮 Future Improvements
+* Implement **Lemmatization** (using spaCy) instead of Stemming for better linguistic accuracy.
+* Experiment with **n-grams** (bi-grams/tri-grams) to capture context.
+* Upgrade to Deep Learning models (LSTMs or Transformers like BERT) for semantic understanding.
+
+## 👨🏼‍💻 Live Demo on Streamlit
+
+Want to see the model in action? I have deployed a user-friendly web application using **Streamlit**.
+
+Simply enter a news headline or a short article excerpt into the text box, and the model will predict its category in real-time.
+
+⚠️ **Note:** The model was trained on the BBC dataset, so please ensure your input text is in **English** for accurate predictions.
+
+[**👉 Click here to try the Streamlit App**](https://ml-data-ai-portfolio-news-article-classifier.streamlit.app/)

@@ -4,9 +4,10 @@ This project builds an end-to-end **regression model** to predict a continuous n
 
 The primary goal is to **demonstrate a complete, end-to-end data science workflow,** starting from raw data and finishing with a highly accurate and interpretable predictive model.
 
-**See the full analysis in the notebook:** [House\_Prices.ipynb]
+**See the full analysis in the notebook:** 
 
-***
+[House\_Prices.ipynb](./House_Prices.ipynb)
+
 
 ## Project Overview
 
