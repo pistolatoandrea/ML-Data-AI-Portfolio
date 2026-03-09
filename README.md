@@ -1,6 +1,25 @@
-# MLOps and Modern AI Engineering Portfolio
+# AI Engineering & MLOps Portfolio
+### From Strategy to Implementation
 
-This repository documents my comprehensive learning path through 10 end-to-end Machine Learning, DevOps (MLOps), and Modern AI projects. The goal is to build a robust portfolio demonstrating practical skills across diverse methodologies and deployment scenarios.
+This repository documents my professional transition from **IT Project Management** to **Technical Practitioner**.
+
+Unlike traditional portfolios focused solely on model training, this body of work prioritizes **System Architecture**. It demonstrates the ability to connect Data Engineering, AI Models, and MLOps infrastructure into cohesive, production-ready solutions.
+
+## 💡 Core Philosophy
+Leveraging my background in project management, I focus on the "Hidden Technical Debt" of machine learning:
+* **Integration over Isolation:** Connecting ETL (Data Eng), Models (Data Science), and APIs (DevOps).
+* **Production Standards:** Moving beyond notebooks to modular code, Docker containers, and automated workflows.
+
+## Project Structure
+
+### 🚀 High-Value Engineering (The Core)
+*Focus: Infrastructure, Modern AI, and Deployment.*
+* **B. MLOps & Engineering:** End-to-end pipelines using **Docker, FastAPI, and Prefect** (e.g., *Automated Crypto ETL*, *Prediction APIs*).
+* **C. Modern AI Applications:** Building **RAG systems and Agents** with Vector Databases and LangChain (e.g., *Context-Aware Chatbot*).
+
+### 📉 Statistical Foundations (Prerequisites)
+*Focus: Algorithmic baselines.*
+* **A. ML Basics:** Foundational exercises in regression and classification (e.g., *Titanic*, *House Prices*) used as prerequisites for the engineering projects above.
 
 ## 🗺️ Project Roadmap and Status
 

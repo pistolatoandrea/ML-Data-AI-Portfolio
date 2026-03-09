@@ -1,0 +1,9 @@
+prefect>=2.0
+pandas
+requests
+sqlalchemy
+psycopg2-binary
+python-dotenv
+dbt-core
+dbt-postgres
+protobuf==5.29.3

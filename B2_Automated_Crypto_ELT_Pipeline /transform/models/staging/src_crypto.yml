@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: crypto_raw      # Nome logico che useremo dentro dbt per chiamare questo gruppo
+    database: crypto_data # Il nome vero del DB
+    schema: public        # Il cassetto dove Python sta scrivendo i dati
+    tables:
+      - name: raw_bitcoin # La tabella vera creata da Python
+        description: "Dati grezzi scaricati da CoinGecko via Python ETL"

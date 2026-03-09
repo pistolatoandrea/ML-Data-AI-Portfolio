@@ -1,0 +1,31 @@
+[0m15:29:22.775787 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110012270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1113cbc50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1113cbd90>]}
+
+
+============================== 15:29:22.779644 | d4f5c1f3-b3ed-4888-9e81-d978a5e81a1e ==============================
+[0m15:29:22.779644 [info ] [MainThread]: Running with dbt=1.10.8
+[0m15:29:22.780113 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/andrea.pistolato/.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt init transform', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:29:22.792878 [info ] [MainThread]: Creating dbt configuration folder at /Users/andrea.pistolato/.dbt
+[0m15:29:22.794770 [debug] [MainThread]: Starter project path: /Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/dbt/include/starter_project
+[0m15:29:22.800225 [info ] [MainThread]: 
+Your new dbt project "transform" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m15:29:22.800496 [info ] [MainThread]: Setting up your profile.
+[0m15:38:19.580382 [info ] [MainThread]: Profile transform written to /Users/andrea.pistolato/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m15:38:19.586775 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 536.88776, "process_in_blocks": "0", "process_kernel_time": 0.219966, "process_mem_max_rss": "110297088", "process_out_blocks": "0", "process_user_time": 1.138939}
+[0m15:38:19.587888 [debug] [MainThread]: Command `dbt init` succeeded at 15:38:19.587669 after 536.89 seconds
+[0m15:38:19.589617 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1116ac770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1116169f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b4a030>]}
+[0m15:38:19.590779 [debug] [MainThread]: Flushing usage events
+[0m15:38:20.136821 [debug] [MainThread]: An error was encountered while trying to flush usage events

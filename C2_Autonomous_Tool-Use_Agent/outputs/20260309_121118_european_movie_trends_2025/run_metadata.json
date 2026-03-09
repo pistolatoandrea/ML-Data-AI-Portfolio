@@ -1,0 +1,8 @@
+{
+  "task": "provide a report on european movie industry trend of 2025",
+  "timestamp": "20260309_121118",
+  "run_name": "european_movie_trends_2025",
+  "iterations": 2,
+  "sources_count": 24,
+  "output_folder": "outputs/20260309_121118_european_movie_trends_2025"
+}
