@@ -12,14 +12,14 @@ Leveraging my background in project management, I focus on the "Hidden Technical
 
 ## Project Structure
 
+### 📉 Statistical Foundations (Prerequisites)
+*Focus: Algorithmic baselines.*
+* **A. ML Basics:** Foundational exercises in regression and classification (e.g., *Titanic*, *House Prices*) used as prerequisites for the engineering projects above.
+
 ### 🚀 High-Value Engineering (The Core)
 *Focus: Infrastructure, Modern AI, and Deployment.*
 * **B. MLOps & Engineering:** End-to-end pipelines using **Docker, FastAPI, and Prefect** (e.g., *Automated Crypto ETL*, *Prediction APIs*).
 * **C. Modern AI Applications:** Building **RAG systems and Agents** with Vector Databases and LangChain (e.g., *Context-Aware Chatbot*).
-
-### 📉 Statistical Foundations (Prerequisites)
-*Focus: Algorithmic baselines.*
-* **A. ML Basics:** Foundational exercises in regression and classification (e.g., *Titanic*, *House Prices*) used as prerequisites for the engineering projects above.
 
 ## 🗺️ Project Roadmap and Status
 
@@ -32,8 +32,8 @@ The projects are organized into three core categories: **ML Foundations (A)**, *
 | **A3** | Customer Segmentation | Clustering | ✅ **COMPLETED**  | K-Means, PCA, Unsupervised Learning | [A3. Customer Segmentation](./A3_Customer_Segmentation) |
 | **A4** | News Article Classification | NLP Multi-Class | ✅ **COMPLETED**  | Text Preprocessing, TF-IDF, Multi-Class Classification | [A4. News Article Classification](./A4_News_Article_Classification) |
 | **B1** | Prediction API with Docker | MLOps Base | ✅ **COMPLETED**  | FastAPI, Dockerization, Endpoint Deployment | [B1. Predictions API with Docker](./B1_Predictions_API_with_Docker) |
-| **B2** | Automated Crypto ETL Pipeline | Data Engineering | ✅ **COMPLETED** | ETL, Prefect, Orchestration, Medallion Architecture, Idempotency | [B2. Automated Crypto ETL Pipeline](./B2_Automated_Crypto_ELT_Pipeline/) |
+| **B2** | Automated Crypto ELT Pipeline | Data Engineering | ✅ **COMPLETED** | ELT, Prefect, Orchestration, Medallion Architecture, Idempotency | [B2. Automated Crypto ELT Pipeline](./B2_Automated_Crypto_ELT_Pipeline/) |
 | **B3** | Dynamic Web Scraping | Data Acquisition | ✅ **COMPLETED** | Selenium, CSS Selector, Data Lake Storage | [B3. Dynamic Web Scraping](./B3_Dynamic_Web_Scraping) |
 | **C1** | Context-Aware RAG Chatbot | RAG/LLMs | ✅ **COMPLETED** | Vector Databases, Retrieval-Augmented Generation, LangChain | [C1. Context Aware RAG Chatbot](./C1_Context_Aware_RAG_Chatbot) |
 | **C2** | Autonomous Tool-Use Agent | Orchestration | ✅ **COMPLETED** | LangChain/CrewAI, Function Calling, Logic Orchestration | [C2. Autonomous Tool-Use Agent](./C2_Autonomous_Tool-Use_Agent)  |
-| **C3** | Fine-Tuning a Pre-Trained Model | Transfer Learning | ⬜ PENDING | Hugging Face ecosystem, Model Fine-Tuning | ⬜ |
+| **C3** | Fine-Tuning a Pre-Trained Model | Transfer Learning | ✅ **COMPLETED** | Hugging Face ecosystem, Model Fine-Tuning | [C3. Fine-Tuning a Pre-Trained Model](./C3_Fine-Tuning_a_Pre-Trained_Model) |
