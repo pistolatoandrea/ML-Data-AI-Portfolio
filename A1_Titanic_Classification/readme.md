@@ -8,7 +8,7 @@ This project analyzes the classic Titanic passenger dataset to build a machine l
 
 The primary goal is to **demonstrate a complete, end-to-end data science workflow,** starting from raw data and finishing with a well-understood, high-performing predictive model and a UI visualization tool.
 
-### **👉🏻 [Interactive Titanic Prediction App](.https://pistolatoandrea-ml-data-ai--a1-titanic-classificationapp-1o6gcp.streamlit.app/)**
+### **👉🏻 [Interactive Titanic Prediction App](https://pistolatoandrea-ml-data-ai--a1-titanic-classificationapp-1o6gcp.streamlit.app/)**
 
 A live ML-powered app that predicts your odds of surviving the Titanic — trained on real passenger data, deployed on Streamlit Cloud. 
 
