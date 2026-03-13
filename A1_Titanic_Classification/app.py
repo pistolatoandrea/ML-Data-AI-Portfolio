@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import joblib
 import random
+import os
 
 # ── Page config ────────────────────────────────────────────────────────────────
 st.set_page_config(
@@ -138,9 +139,8 @@ hr { border-color: rgba(201, 168, 76, 0.15); }
 # ── Model ──────────────────────────────────────────────────────────────────────
 @st.cache_resource
 def load_model():
-    return joblib.load('titanic_model.pkl')
-
-model = load_model()
+    model_path = os.path.join(os.path.dirname(__file__), 'titanic_model.pkl')
+    return joblib.load(model_path)
 
 # ── Hero ───────────────────────────────────────────────────────────────────────
 st.markdown("""
