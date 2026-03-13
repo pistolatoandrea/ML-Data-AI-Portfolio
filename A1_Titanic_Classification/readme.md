@@ -4,9 +4,15 @@ This project analyzes the classic Titanic passenger dataset to build a machine l
 
 **See the full analysis in the notebook:** 
 
-[Titanic Jupyter Notebook](./Titanic_Jupyter_Notebook.ipynb)
+### **👉🏻 [Titanic Jupyter Notebook](./Titanic_Jupyter_Notebook.ipynb)**
 
 The primary goal is to **demonstrate a complete, end-to-end data science workflow,** starting from raw data and finishing with a well-understood, high-performing predictive model and a UI visualization tool.
+
+### **👉🏻 [Interactive Titanic Prediction App](.https://pistolatoandrea-ml-data-ai--a1-titanic-classificationapp-1o6gcp.streamlit.app/)**
+
+A live ML-powered app that predicts your odds of surviving the Titanic — trained on real passenger data, deployed on Streamlit Cloud. 
+
+*Please note that the app may take several seconds to wake up on first load.*
 
 ## Process & Objectives
 
@@ -43,12 +49,3 @@ While Random Forest 81% accuracy is a strong result, to overcome this performanc
     * **`Name`**: Extracting titles (e.g., "Mr.", "Mrs.", "Dr.", "Master") could create a new, powerful categorical feature that likely correlates with both age and social status.
 
     * **`Ticket`**: Analyzing ticket prefixes might reveal correlations to cabin location or booking group, which could also influence survival.
-
-## Streamlit App
-
-To view and interact with the application locally, you can use the provided script named **`app_titanic.py`**. After activating your virtual environment and installing the necessary dependencies, simply execute the command in your terminal:
-
- ```bash
- streamlit run app_titanic.py
- ```
-This will launch a local web server and automatically open the app in your default browser. Please note that depending on your configuration, you might be prompted to create a Streamlit account or provide an email address to finalize the setup.
