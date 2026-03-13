@@ -142,6 +142,13 @@ def load_model():
     model_path = os.path.join(os.path.dirname(__file__), 'titanic_model.pkl')
     return joblib.load(model_path)
 
+try:
+    model = load_model()
+    st.success("Model loaded successfully")  # rimuovi dopo il debug
+except Exception as e:
+    st.error(f"Model loading failed: {e}")
+    st.stop()
+
 # ── Hero ───────────────────────────────────────────────────────────────────────
 st.markdown("""
 <div class="hero">
